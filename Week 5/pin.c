@@ -43,7 +43,7 @@ void enterPin()
 
   // Uses strlen to verify required length
   // If it doesn't meet the length it calls enterPin() and starts over
-  if (strlen(pin) != 6 || pin[0] =='0')
+  if (isdigit(pin) != 0 || strlen(pin) != 6 || pin[0] =='0')
   {
     printf("\nError : PIN must be 6 numbers, no letters, and cannot start with 0. \n");
     enterPin();
@@ -54,7 +54,7 @@ void enterPin()
 
   // Uses strlen to verify required length
   // If it doesn't meet the length it calls enterPin() and starts over
-  if (strlen(pin2) != 6 || pin2[0] =='0')
+  if (isdigit(pin) != 0 || strlen(pin) != 6 || pin[0] =='0')
   {
     printf("\nError : PIN must be 6 numbers, no letters, and cannot start with 0. \n");
     enterPin();
